@@ -23,7 +23,7 @@
     "start:backend": "nodemon ./index.js",
     "start:frontend": "cd ../client && npm start",
     "build:frontend": "cd ../client && npm run build && cd blogwhale && npm run build",
-    "install:all": "npm install && (cd ../client && npm install) && (cd ../client/blog && npm install)",
+    "install:all": "npm install && (cd ../client && npm install) && (cd ../client/blogwhale && npm install)",
     "dev": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
     "test": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --detectOpenHandles --forceExit",
     "test:watch": "NODE_OPTIONS='--experimental-vm-modules --no-warnings' jest --watchAll --detectOpenHandles",

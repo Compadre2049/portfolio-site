@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/blogwhale",
+  "homepage": "/blogwhale/",
   "proxy": "http://localhost:3001",
   "dependencies": {
     "all": "^0.0.0",

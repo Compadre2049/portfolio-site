@@ -25,7 +25,7 @@ const ProtectedRoute = ({ children }) => {
 function App() {
   return (
     <AuthProvider>
-      <Router basename="/blogwhale">
+      <Router basename="/blogwhale/">
         <div className="App">
           <Navbar />
           <Routes>

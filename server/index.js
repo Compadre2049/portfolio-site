@@ -57,7 +57,7 @@ connectToDatabase()
         app.use('/api/private', (await import('./routes/privateRouter.js')).default);
 
         // Serve BlogWhale static files
-        app.use('/blogwhale', express.static(path.join(__dirname, '../client/blogwhale/build')));
+        app.use('/blogwhale/', express.static(path.join(__dirname, '../client/blogwhale/build')));
 
         // Handle BlogWhale SPA routes
         app.get('/blogwhale/*', (req, res) => {

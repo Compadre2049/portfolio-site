@@ -3,7 +3,7 @@ import React from 'react';
 function Portfolio() {
     const handleBlogWhaleClick = (e) => {
         e.preventDefault();
-        window.location.href = '/blogwhale';
+        window.location.href = '/blogwhale/';
     };
 
     return (

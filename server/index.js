@@ -47,11 +47,6 @@ connectToDatabase()
         // Serve Portfolio static files
         app.use(express.static(path.join(__dirname, '../client/build')));
 
-        // Portfolio main route
-        app.get('/', (req, res) => {
-            res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-        });
-
         // =========================================
         // BlogWhale Routes
         // =========================================
@@ -62,7 +57,7 @@ connectToDatabase()
         app.use('/api/private', (await import('./routes/privateRouter.js')).default);
 
         // Serve BlogWhale static files
-        app.use('/blogwhale', express.static(path.join(__dirname, '../client/blogwhale/build')));
+        app.use('/blogwhale/', express.static(path.join(__dirname, '../client/blogwhale/build')));
 
         // Handle BlogWhale routes
         app.get('/blogwhale/*', (req, res) => {
@@ -73,10 +68,10 @@ connectToDatabase()
         // Catch-all Route Handler
         // =========================================
         app.get('*', (req, res) => {
-            if (req.path.startsWith('/blogwhale')) {
+            if (req.path.startsWith('/blogwhale/')) {
                 res.sendFile(path.join(__dirname, '../client/blogwhale/build/index.html'));
             } else {
-                res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+                res.sendFile(path.join(__dirname, '../client/build/index.html'));
             }
         });
 

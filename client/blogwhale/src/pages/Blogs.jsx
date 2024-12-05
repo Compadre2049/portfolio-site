@@ -12,7 +12,7 @@ function Blogs() {
         const fetchBlogs = async () => {
             try {
                 const token = localStorage.getItem('token');
-                const response = await fetch(`${process.env.REACT_APP_BACKEND_ORIGIN}/api/blogs`, {
+                const response = await fetch(`/api/blogs`, {
                     headers: {
                         'Authorization': `Bearer ${token}`,
                         'Content-Type': 'application/json'

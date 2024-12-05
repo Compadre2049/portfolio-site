@@ -17,7 +17,7 @@ function BlogPost() {
 
             try {
                 const token = localStorage.getItem('token');
-                const response = await fetch(`${process.env.REACT_APP_BACKEND_ORIGIN}/api/blogs/${id}`, {
+                const response = await fetch(`/api/blogs/${id}`, {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }

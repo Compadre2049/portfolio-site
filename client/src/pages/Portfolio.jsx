@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Portfolio() {
     return (
@@ -17,12 +18,12 @@ function Portfolio() {
             </div>
 
             <div className='flex justify-center mt-10'>
-                <a
-                    href='/blogwhale/'
+                <Link
+                    to='/blogwhale/'
                     className='text-center font-bold text-lg sm:text-xl text-green underline underline-offset-8 hover:text-red'
                 >
                     Visit The Blog Site I Built!
-                </a>
+                </Link>
             </div>
         </div>
     )

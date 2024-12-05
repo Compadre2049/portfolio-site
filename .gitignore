@@ -10,5 +10,6 @@
 .DS_Store
 .env
 server/public/assets/Nathan-CV.txt
+**/__tests__/
 
 

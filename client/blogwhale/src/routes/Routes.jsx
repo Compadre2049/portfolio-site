@@ -1,13 +1,14 @@
 import React from 'react'
 import Home from "../pages/Home";
 import About from "../pages/About";
-import Portfolio from "../pages/Portfolio";
+import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
-import LinkBlog from "../pages/LinkBlog";
+import Blogs from "../pages/Blogs";
+import Login from "../pages/Login";
 
 export const ROUTES = [
     {
-        path: "/",
+        path: "/home",
         element: <Home />,
     },
     {
@@ -15,15 +16,19 @@ export const ROUTES = [
         element: <About />,
     },
     {
-        path: "/portfolio",
-        element: <Portfolio />,
+        path: "/projects",
+        element: <Projects />,
     },
     {
         path: "/contact",
         element: <Contact />,
     },
     {
-        path: "/link-blog",
-        element: <LinkBlog />,
-    }
+        path: "/blogs",
+        element: <Blogs />,
+    },
+    {
+        path: "/login",
+        element: <Login />,
+    },
 ];

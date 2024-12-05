@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Portfolio() {
     return (
@@ -15,8 +15,17 @@ function Portfolio() {
                     Check out my GitHub
                 </a>
             </div>
+
+            <div className='flex justify-center mt-10'>
+                <a
+                    href='/blogwhale/'
+                    className='text-center font-bold text-lg sm:text-xl text-green underline underline-offset-8 hover:text-red'
+                >
+                    Visit The Blog Site I Built!
+                </a>
+            </div>
         </div>
     )
 }
 
-export default Portfolio
+export default Portfolio;

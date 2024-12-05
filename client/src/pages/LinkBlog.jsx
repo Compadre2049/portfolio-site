@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Blog() {
+function LinkBlog() {
     return (
         <div className='px-4 md:px-8'>
             <h1 className='text-center font-bold text-3xl md:text-5xl text-red pb-8 md:pb-14'>
@@ -77,4 +77,4 @@ function Blog() {
     )
 }
 
-export default Blog
+export default LinkBlog;

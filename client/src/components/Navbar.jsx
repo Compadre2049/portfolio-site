@@ -31,7 +31,7 @@ function Navbar() {
                     <a href='/about' className='hover:underline underline-offset-8 hover:text-red'>About</a>
                     <a href='/portfolio' className='hover:underline underline-offset-8 hover:text-red'>Portfolio</a>
                     <a href='/contact' className='hover:underline underline-offset-8 hover:text-red'>Contact</a>
-                    <a href='/blog' className='hover:underline underline-offset-8 hover:text-red'>Link Blog</a>
+                    <a href='/link-blog' className='hover:underline underline-offset-8 hover:text-red'>Link Blog</a>
                 </div>
             </div>
 
@@ -41,7 +41,7 @@ function Navbar() {
                 <a href='/about' className='hover:underline underline-offset-8 hover:text-red'>About</a>
                 <a href='/portfolio' className='hover:underline underline-offset-8 hover:text-red'>Portfolio</a>
                 <a href='/contact' className='hover:underline underline-offset-8 hover:text-red'>Contact</a>
-                <a href='/blog' className='hover:underline underline-offset-8 hover:text-red'>Link Blog</a>
+                <a href='/link-blog' className='hover:underline underline-offset-8 hover:text-red'>Link Blog</a>
             </div>
         </nav>
     )

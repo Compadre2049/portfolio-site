@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
+import nodemailer from 'nodemailer';
+
 const router = express.Router();
-const nodemailer = require('nodemailer');
 
 // Create transporter
 const transporter = nodemailer.createTransport({
@@ -34,4 +35,4 @@ router.post('/', async (req, res) => {
     }
 });
 
-module.exports = router; 
+export default router; 

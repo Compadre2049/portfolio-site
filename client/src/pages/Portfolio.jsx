@@ -3,7 +3,7 @@ import React from 'react';
 function Portfolio() {
     const handleBlogWhaleClick = (e) => {
         e.preventDefault();
-        window.location.href = '/blogwhale/';
+        window.location.replace('/blogwhale/');
     };
 
     return (
@@ -23,7 +23,7 @@ function Portfolio() {
 
             <div className='flex justify-center mt-10'>
                 <a
-                    href='/blogwhale'
+                    href='/blogwhale/'
                     onClick={handleBlogWhaleClick}
                     className='text-center font-bold text-lg sm:text-xl text-green underline underline-offset-8 hover:text-red'
                 >

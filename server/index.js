@@ -56,11 +56,25 @@ connectToDatabase()
         app.use('/api/users', (await import('./routes/usersRouter.js')).default);
         app.use('/api/private', (await import('./routes/privateRouter.js')).default);
 
+        // Add debugging middleware for BlogWhale routes
+        app.use('/blogwhale', (req, res, next) => {
+            console.log('BlogWhale Request:', {
+                method: req.method,
+                path: req.path,
+                headers: {
+                    accept: req.headers.accept,
+                    'content-type': req.headers['content-type']
+                }
+            });
+            next();
+        });
+
         // Serve BlogWhale static files
         app.use('/blogwhale/', express.static(path.join(__dirname, '../client/blogwhale/build')));
 
         // Handle BlogWhale SPA routes
         app.get('/blogwhale/*', (req, res) => {
+            console.log('Serving BlogWhale index.html for path:', req.path);
             res.sendFile(path.join(__dirname, '../client/blogwhale/build/index.html'));
         });
 
